@@ -70,7 +70,6 @@ Now checkout branch using the `git checkout` command:
 ```bash
 git checkout  your-new-branch-name
 ```
-
 For example:
 
 ```bash
