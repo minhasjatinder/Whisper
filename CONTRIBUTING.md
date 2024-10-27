@@ -18,10 +18,93 @@
 - If you are working on the backend, share a screenrecording of your working software
 - don't create a PR for things outside of your issue's scope, it will lead to more work for the maintainers
 
+
 ### General guidelines
 
 - Do read the `readme.md` file
 - If there's no PR for an issue in the allocated time, you will be unassigned, the following labels determine the time. `2days`, `4days`, `7 days(1week)`, `2 weeks`
+#### How to make a pull request
+
+##### Fork this repository
+
+Fork this repository by clicking on the fork button on the top of this page.
+This will create a copy of this repository in your account.
+
+##### Clone the repository
+
+
+Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
+
+Open a terminal and run the following git command:
+
+```bash
+git clone "url you just copied"
+```
+
+where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
+
+
+For example:
+
+```bash
+git clone git@github.com:this-is-you/first-contributions.git
+```
+
+where `this-is-you` is your GitHub username. Here you're copying the contents of the first-contributions repository on GitHub to your computer.
+
+##### Create a branch
+
+Change to the repository directory on your computer (if you are not already there):
+
+```bash
+cd projectFolder
+```
+
+Now create a branch using the `git branch` command:
+```bash
+git branch your-new-branch-name
+```
+Now checkout branch using the `git checkout` command:
+
+
+```bash
+git checkout  your-new-branch-name
+```
+
+For example:
+
+```bash
+git checkout -b adding darkmode option
+```
+
+##### Make necessary changes and commit those changes
+
+Make the changes to files 
+
+If you go to the project directory and execute the command `git status`, you'll see there are changes.
+
+Add those changes to the branch you just created using the `git add` command:
+
+```bash
+git add .
+```
+
+Now commit those changes using the `git commit` command:
+
+```bash
+git commit -m "Added dark mode option"
+```
+
+
+##### Push changes to GitHub
+
+Push your changes using the command `git push`:
+
+```bash
+git push -u origin your-branch-name
+```
+
+replacing `your-branch-name` with the name of the branch you created earlier.
 
 #### 👌🏾 How to fill a pull request template(Text)
 
